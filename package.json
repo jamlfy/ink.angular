@@ -1,0 +1,22 @@
+{
+	"name": "ink.angular",
+	"version": "0.0.1",
+	"description": "Ink.Sapo in AnglarJS",
+	"author": "alejonext",
+	"analyze": true,
+	"contributors": [
+		{
+			"name": "Alejandro Moreno",
+			"email": "alejonext@gmail.com"
+		}
+	],
+	"main" : "lib/ink.angular.js",
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:alejonext/ink.angular.git"
+	},
+	"engines": {
+		"node": ">=0.10",
+		"npm": ">=1.1.59"
+	}
+}
