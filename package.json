@@ -1,7 +1,7 @@
 {
 	"name": "ink.angular",
-	"version": "0.0.2",
-	"description": "Ink.Sapo in AnglarJS",
+	"version": "0.0.3",
+	"description": "Ink.Sapo in AngularJS",
 	"author": "alejonext",
 	"analyze": true,
 	"contributors": [

@@ -4,7 +4,7 @@
 	"dependencies": {
 		"angular" : ">=1.3.0"
 	},
-	"description": "Ink.Sapo in AnglarJS",
+	"description": "Ink.Sapo in AngularJS",
 	"main": "lib/ink.angular.js",
 	"repository": {
 		"type": "git",

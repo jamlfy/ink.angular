@@ -3,9 +3,9 @@
 ## Install
 
 ```console
-$ npm install ink.anglar.js
+$ npm install ink.angular
 # OR
-$ bower install ink.anglar.js
+$ bower install ink.angular
 ```
 
 ## Use
@@ -13,7 +13,7 @@ $ bower install ink.anglar.js
 In html
 ```html
 <script src="angular.js">
-<script src="ink.anglar.js">
+<script src="ink.angular.js">
 ```
 In the JS
 ```js
@@ -53,4 +53,10 @@ or
 function(scope){
 	scope.open();
 }
+```
+
+Sticky
+```html
+<ANY class="sticky" offset=100 body-class="BodyClass" sticky-class="myStickyClass" >
+</ANY>
 ```
