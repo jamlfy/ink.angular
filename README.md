@@ -25,7 +25,7 @@ var app = anglar.module('myApp', [ 'ink.angular' ]);
 ### Directives
 Alert
 ```html
-<alert title="hello" status="green" block >
+<alert title="hello" status="green" >
 	Hello is my body
 </alert>
 ```
