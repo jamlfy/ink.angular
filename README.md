@@ -1,5 +1,7 @@
 # [ink](http://ink.sapo.pt).[angular](https://angularjs.org)
 
+No jQuery required! - [AngularJS](https://angularjs.org) directives for [Ink](http://ink.sapo.pt).
+
 ## Install
 
 ```console
@@ -12,8 +14,8 @@ $ bower install ink.angular
 
 In html
 ```html
-<script src="angular.js">
-<script src="ink.angular.js">
+<script src="angular.js"></script>
+<script src="ink.angular.js"></script>
 ```
 In the JS
 ```js
