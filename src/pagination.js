@@ -5,6 +5,18 @@ export const name = 'pagination';
  */
 
 export function f (prex) {
+	const templete = 
+`<nav class="${prex}-navigation" id="{{ids}}">
+	<ul class="pagination {{color}}">
+		<li class="first"><a ng-click="previous()" >{{text.first}}</a></li>
+		<li class="previousPage disabled {{showPrevious}}"><a ng-click="previous(showNumber)">{{text.previous}} {{step}}</a></li>
+		<li class="previous {{showPrevious}}"><a ng-click="previous(1)">{{text.previous}}</a></li>
+		<li ng-repeat="val in arr" class="{{shomMe($index)}}"><a ng-href="{{hrefText(val)}}" data-index="{{$index}}">{{val}}</a></li>
+		<li class="next {{showPrevious}}"><a ng-click="next(1)">{{text.next}}</a></li>
+		<li class="nextPage {{showNext}}"><a ng-click="next(step)">{{text.next}} {{step}}</a></li>
+		<li class="last"><a ng-click="next()">{{text.last}}</a></li>
+	</ul>
+</nav>`;
 	return {
 		restrict: 'E',
 		transclude: true,
@@ -53,19 +65,7 @@ export function f (prex) {
 			};
 
 		},
-		templete :  `<nav class="${prex}-navigation" id="{{ids}}">
-						<ul class="pagination {{color}}">
-							<li class="first"><a ng-click="previous()" >{{text.first}}</a></li>
-							<li class="previousPage disabled {{showPrevious}}"><a ng-click="previous(showNumber * -1)">{{text.previous}} {{step}}</a></li>
-							<li class="previous {{showPrevious}}"><a ng-click="previous(1)">{{text.previous}}</a></li>
-
-							<li ng-repeat="val in arr" class="{{shomMe($index)}}"><a ng-href="{{hrefText(val)}}" data-index="{{$index}}">{{val}}</a></li>
-							
-							<li class="next {{showPrevious}}"><a ng-click="next(1)">{{text.next}}</a></li>
-							<li class="nextPage {{showNext}}"><a ng-click="next(step)">{{text.next}} {{step}}</a></li>
-							<li class="last"><a ng-click="next()">{{text.last}}</a></li>
-						</ul>
-					</nav>`
+		templete
 	}
 }
 

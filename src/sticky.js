@@ -15,7 +15,7 @@ export function f (prex, win) {
 			let mediaQuery  = scope.mediaQuery  || null,
 				stickyClass = scope.stickyClass || '',
 				bodyClass   = scope.bodyClass   || '',
-				$elem   = elem, elem = $elem[0],
+				$elem   = $elem[0],
 				$window = angular.element(win),
 				$body   = angular.element(doc.body),
 				doc     = document.documentElement,

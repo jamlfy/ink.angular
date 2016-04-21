@@ -5,6 +5,11 @@ export const name = 'bar';
  */
 
 export function f (prex) {
+	const template =
+`<div class="${prex}-progress-bar">
+	<span class="caption" ng-transclude></span>
+	<div class="bar {{cls}}"></div>
+</div>`;
 	return {
 		restrict: 'E',
 		replace: true,
@@ -28,9 +33,6 @@ export function f (prex) {
 				scope.cls = value;
 			});
 		},
-		template : 	`<div class="${prex}-progress-bar">
-						<span class="caption" ng-transclude></span>
-						<div class="bar {{cls}}"></div>
-					</div>`
+		template
 	};
 }

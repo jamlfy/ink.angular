@@ -6,6 +6,12 @@ export const name = 'alert';
  */
 
 export function f (prex) {
+	const template = 
+`<div class="alert {{types}} {{status}}" role="alert">
+	<button class="${prex}-dismiss close" ng-click="close()">&times;</button>
+	<h4 ng-if="show">{{block}}</h4>
+	<p ng-transclude></p>
+</div>`;
 	return {
 		restrict: 'E',
 		transclude: true,
@@ -21,10 +27,6 @@ export function f (prex) {
 				elez.remove();
 			};
 		},
-		template :	`<div class="alert {{types}} {{status}}" role="alert">
-						<button class="${prex}-dismiss close" ng-click="close()">&times;</button>
-						<h4 ng-if="show">{{block}}</h4>
-						<p ng-transclude></p>
-					</div>`
+		template
 	};	
 }

@@ -1,22 +1,26 @@
 {
 	"name": "ink.angular",
-	"version": "0.0.4",
+	"version": "1.0.4",
 	"description": "Ink.Sapo in AngularJS",
 	"author": "alejonext",
 	"analyze": true,
 	"contributors": [
 		{
-			"name": "Alejandro Moreno",
+			"name": "Alejandro Next",
 			"email": "alejonext@gmail.com"
 		}
 	],
-	"main" : "lib/ink.angular.js",
+	"main" : "lib/index.js",
 	"repository": {
 		"type": "git",
 		"url": "git@github.com:alejonext/ink.angular.git"
 	},
-	"engines": {
-		"node": ">=0.10",
-		"npm": ">=1.1.59"
+	"scripts": {
+		"build" : "npm run npm && npm run bower",
+		"npm": "babel src -d lib",
+		"bower" : "browserify lib/index.js -o  lib/ink.angular.js"
+	},
+	"babel" :{
+		"presets": ["es2015", "stage-0", "stage-1", "stage-2", "stage-3"]
 	}
 }
