@@ -1,6 +1,6 @@
 {
 	"name": "ink.angular",
-	"version": "0.0.4",
+	"version": "1.0.4",
 	"dependencies": {
 		"angular" : ">=1.3.0"
 	},
@@ -11,7 +11,7 @@
 		"url": "git@github.com:alejonext/ink.angular.git"
 	},
 	"authors": [
-		"alejonext"
+		"alejonext <alejonext@gmail.com>"
 	],
 	"ignore": [
 	 	"md",
@@ -20,7 +20,6 @@
 		"bower_components",
 		"test",
 		"tests",
-		"routes/cdn/components/"
 	],
 	"license": "Apache"
 }
