@@ -23,9 +23,7 @@ export function f (prex) {
 		link (scope, elez, attrs) {
 			scope.types = scope.title ? 'block' : 'basic';
 			scope.show = scope.types === 'block';
-			scope.close = function(){
-				elez.remove();
-			};
+			scope.close = () => elez.remove();
 		},
 		template
 	};	

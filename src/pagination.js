@@ -40,7 +40,6 @@ export function f (prex) {
 				} else{
 					scope.pagination = 0;
 				}
-
 			};
 
 			scope.next = index => {
@@ -60,10 +59,7 @@ export function f (prex) {
 				}
 			};
 
-			scope.hrefText = (val=0) => {
-				return attr.href.replace(':pages', val);
-			};
-
+			scope.hrefText = (val=0) => attr.href.replace(':pages', val);
 		},
 		templete
 	}

@@ -22,16 +22,8 @@ export function f (prex) {
 		link (scope, ele, attr, ctrl) {
 			var total = parseInt( attr.total ) || 100;
 			var bar = angular.element( ele.children()[1] );
-
-			scope.$watch(scope.progress, value => {
-				bar.css({
-					'width' : ( ( Number(value) * 100 ) / total ) +  '%'
-				});
-			});
-
-			scope.$watch(scope.color, value => {
-				scope.cls = value;
-			});
+			scope.$watch(scope.progress, value => bar.css({ 'width' : ( ( Number(value) * 100 ) / total ) +  '%' }));
+			scope.$watch(scope.color, value => scope.cls = value);
 		},
 		template
 	};
